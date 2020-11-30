@@ -9,7 +9,7 @@ const returns = require("../routes/returns");
 const error = require("../middleware/error");
 
 module.exports = function (app) {
-  app.use(express.static("./public"));
+  // app.use(express.static("./public"));
   app.use(express.json());
   app.use("/api/genres", genres);
   app.use("/api/customers", customers);
